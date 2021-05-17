@@ -146,7 +146,7 @@ const Login = (props) => {
 
     }else{
       try{
-        const responseData=await sendRequest('http://localhost:5000/api/auth/signup',
+        const responseData=await sendRequest(`${process.env.REACT_APP_BACKEND_URL}/auth/signup`,
           'POST',
           JSON.stringify({
             username:enteredName,
