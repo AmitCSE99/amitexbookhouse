@@ -123,7 +123,7 @@ const EditProduct = (props) => {
         setQuantityData(responseData.book.stockQuantity);
         setFilter(responseData.book.branch);
         // initialAddress=responseData.book.address;
-        setAddressData(responseData.book.address)
+        // setAddressData(responseData.book.address)
         console.log(initialTitle);
         setFormIsValid(true);
       } catch (err) {}

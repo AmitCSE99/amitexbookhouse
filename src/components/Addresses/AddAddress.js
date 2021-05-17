@@ -7,8 +7,10 @@ import AuthContext from "../../context/auth-context";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 import ErrorModal from "../../UI/ErrorModal";
 import useHttpClient from "../../hooks/use-http";
+import { useHistory } from "react-router";
 const EditAddress = (props) => {
   const auth = useContext(AuthContext);
+  const history=useHistory();
   const addressValidator = (value) => {
     return value.length > 5;
   };
@@ -52,7 +54,7 @@ const EditAddress = (props) => {
       }),{
         "Content-Type": "application/json",Authorization:'Bearer '+auth.token
       });
-      history.back();
+      history.goBack();
     }catch(err){
 
     }

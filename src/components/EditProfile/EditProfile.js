@@ -7,7 +7,9 @@ import AuthContext from "../../context/auth-context";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 import ErrorModal from "../../UI/ErrorModal";
 import useHttpClient from "../../hooks/use-http";
+import { useHistory } from "react-router";
 const EditProfile = (props) => {
+  const history=useHistory();
   const auth = useContext(AuthContext);
   const {isLoading,error,sendRequest,clearError}=useHttpClient();
 //   const history = useHistory();
@@ -81,7 +83,7 @@ const EditProfile = (props) => {
   },[sendRequest])
   
   const closeBackdropHandler = () => {
-    history.back();
+    history.goBack();
   };
   
   const formSubmitHandler=async(event)=>{
@@ -101,7 +103,7 @@ const EditProfile = (props) => {
 
           alert('Profile is updated');
 
-          history.back();
+          history.goBack();
       }catch(err){
 
       }

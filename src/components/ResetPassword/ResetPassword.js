@@ -9,6 +9,7 @@ import LoadingSpinner from "../../UI/LoadingSpinner";
 import ErrorModal from "../../UI/ErrorModal";
 import useHttpClient from "../../hooks/use-http";
 const ResetPassword=props=>{
+  const history=useHistory();
     const auth = useContext(AuthContext);
   const {isLoading,error,sendRequest,clearError}=useHttpClient();
 //   const history = useHistory();
@@ -50,7 +51,7 @@ const ResetPassword=props=>{
   }, [enteredPasswordIsValid, enteredConfirmPasswordIsValid]);
 
   const closeBackdropHandler = () => {
-    history.back();
+    history.goBack();
   };
 
   const formSubmitHandler=async(event)=>{

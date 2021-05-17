@@ -2,7 +2,7 @@ import useInput from "../../hooks/use-input";
 import classes from './AddAddress.module.css';
 import { useState, useEffect } from "react";
 import React from "react";
-import {useParams } from "react-router-dom";
+import {useParams,useHistory } from "react-router-dom";
 import { useContext } from "react";
 import AuthContext from "../../context/auth-context";
 import LoadingSpinner from "../../UI/LoadingSpinner";
@@ -10,6 +10,7 @@ import ErrorModal from "../../UI/ErrorModal";
 import useHttpClient from "../../hooks/use-http";
 const EditAddress=props=>{
     const params=useParams();
+    const history=useHistory();
     const auth = useContext(AuthContext);
     const {isLoading,error,sendRequest,clearError}=useHttpClient();
   const addressValidator = (value) => {
@@ -68,7 +69,7 @@ const EditAddress=props=>{
       }),{
         "Content-Type": "application/json",Authorization:'Bearer '+auth.token
       });
-      history.back();
+      history.goBack();
     }catch(err){
 
     }
