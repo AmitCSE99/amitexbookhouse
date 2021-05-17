@@ -1,0 +1,33 @@
+.imagePreview {
+    width: 10rem;
+  height: 10rem;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.imagePreview img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container button{
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: #b73225;
+    border-color: #b73225;
+    color: white;
+    border-radius: 3rem;
+}
+.container button:hover{
+    background-color: black;
+    border-color: black;
+}

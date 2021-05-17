@@ -1,0 +1,18 @@
+.listContainer{
+    list-style: none;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.outerContainer{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.listItemContainer{
+    display: flex;
+    flex-direction: column;
+    
+}

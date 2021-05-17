@@ -1,0 +1,148 @@
+.contactFormContainer {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    /* transform: translate(-20%, -20%); */
+    width: 50%;
+    /* padding: 10px; */
+    padding: 1rem;
+    margin-top: 6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: rgb(243, 243, 243);
+    animation: slide-down 300ms ease-out forwards;
+  }
+  .contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-around;
+  }
+  .contactForm label {
+    font-weight: bold;
+  }
+  .contactForm input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    height: 1.4rem;
+    padding-left: 0.3rem;
+  }
+  
+  .contactForm button:disabled {
+    background-color: #ccc;
+    color: #3f3f3f;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .errorText {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* .invalid input {
+      border: 1px solid #b40e0e;
+      background-color: #fddddd;
+    } */
+  
+  .invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    background-color: rgb(231, 231, 231);
+  }
+  .contactForm textarea {
+    width: 71%;
+    height: 4rem;
+  }
+  .buttonContainer {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .buttonContainer button {
+    cursor: pointer;
+    width: 15%;
+    height: 2.2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    background-color: #b73225;
+    border-color: #b73225;
+    color: white;
+    border-radius: 3rem;
+  }
+  .buttonContainer button:hover {
+    background-color: black;
+    border-color: black;
+  }
+  
+  .signInPara {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .signInPara p {
+    cursor: pointer;
+    color: #b73225;
+    font-weight: 700;
+  }
+  .signInPara p:hover {
+    color: #3f3f3f;
+  }
+  .contactForm h2 {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 550px) {
+      .contactFormContainer{
+          left: 5%;
+          width: 80%;
+          top: 0%;
+      }
+    .contactForm h2 {
+      margin-top: 1rem;
+    }
+  
+    .contactForm {
+      height: 75vh;
+      overflow: scroll;
+      scroll-behavior: auto;
+    }
+  
+    .buttonContainer button {
+      margin-top: 1rem;
+      width: 7rem;
+    }
+    .contactForm input {
+      width: 80%;
+    }
+    .contactForm textarea {
+      width: 82%;
+    }
+    .signInPara p {
+      margin-bottom: 1rem;
+      cursor: pointer;
+      color: #b73225;
+      font-weight: 700;
+    }
+  }
+  @keyframes slide-down {
+      from {
+        opacity: 0;
+        transform: translateY(-6rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  

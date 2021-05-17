@@ -1,0 +1,35 @@
+.outerContainer h2{
+    margin-top: 6rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+.noOrders{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.orderListContainer{
+    width:70%;
+    position: absolute;
+    top: 20%;
+    left:10%;
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:1150px){
+    .orderListContainer{
+        left: 0;
+        top:20%;
+        width: 100%;
+    }
+    .noOrders{
+        left:15%;
+        top:40%;
+    }
+}
+@media(max-width:340px){
+    .orderListContainer{
+        top:25%
+    }
+}

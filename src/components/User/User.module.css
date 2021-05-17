@@ -1,0 +1,107 @@
+.outerContainer{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ordersContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+.ordersContainer:hover{
+    cursor: pointer;
+    background-color:rgb(228, 228, 228);
+}
+.orderImageContainer{
+    margin-right: 1rem;
+}
+.orderImageContainer img{
+    width: 5rem;
+    height: 5rem;
+}
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+.loginContainer:hover{
+    cursor: pointer;
+    background-color:rgb(228, 228, 228);
+}
+.loginImageContainer{
+    margin-right: 1rem;
+}
+.loginImageContainer img{
+    width: 4rem;
+    height: 4rem;
+}
+.addressContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+.addressContainer:hover{
+    cursor: pointer;
+    background-color:rgb(228, 228, 228);
+}
+.addressImageContainer{
+    margin-right: 1rem;
+}
+.addressImageContainer img{
+    width: 4rem;
+    height: 4rem;
+}
+.passwordContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+.passwordContainer:hover{
+    cursor: pointer;
+    background-color:rgb(228, 228, 228);
+}
+.passwordImageContainer{
+    margin-right: 1rem;
+}
+.passwordImageContainer img{
+    width: 4rem;
+    height: 4rem;
+}
+@media(max-width:1000px){
+    .outerContainer{
+        top:20%;
+        left:5%;
+        right: 5%;
+    }
+    .ordersContainer{
+        width: 100%;
+    }
+    .loginContainer{
+        width: 100%;
+    }
+    .addressContainer{
+        width: 100%;
+    }
+    .passwordContainer{
+        width: 100%;
+    }
+}

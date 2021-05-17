@@ -1,0 +1,39 @@
+.bookItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bookItem img{
+    width:15rem;
+    height:20rem;
+    cursor: pointer;
+}
+.listItem{
+    list-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 48px 96px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.bookItem button{
+    font-size: 1rem;
+    cursor: pointer;
+    height:2.5rem;
+    width: 15rem;
+    background-color: #B73225;
+    color: white;
+    border-radius: 2rem;
+    border-color: #B73225;
+}
+.bookItem button:hover{
+    background-color: #dd584b;
+}
+.bookItem p{
+    text-align: center;
+    width: 15rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

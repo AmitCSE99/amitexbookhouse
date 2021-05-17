@@ -1,0 +1,53 @@
+.outerContainer{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.outerContainer h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.addAddressButton{
+    /* position: absolute;
+    top:20%;
+    left: 50%; */
+    font-size: 1rem;
+    cursor: pointer;
+    height:2rem;
+    width: 10rem;
+    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    background-color: #B73225;
+    color: white;
+    border-radius: 2rem;
+    border-color: #B73225;
+    
+}
+.container{
+    position: absolute;
+    width:100%;
+    top: 25%;
+    /* left: 2%; */
+}
+.addressContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media(max-height:650px){
+ .container{
+     top:30%;
+     /* left:3% */
+ }
+ .addAddressButton{
+     margin-top: 1rem;
+ }
+}
+@media(max-width:1000px){
+    .addressContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+}

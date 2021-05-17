@@ -1,0 +1,59 @@
+.bookItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookItem img {
+  width: 15rem;
+  height: 20rem;
+}
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+}
+.listItem {
+  list-style: none;
+  margin: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.bookItem button {
+  font-size: 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  margin: 0.5rem;
+  width: 10rem;
+  background-color: #b73225;
+  color: white;
+  border-radius: 2rem;
+  border-color: #b73225;
+}
+.bookItem button:hover {
+  background-color: #dd584b;
+}
+.bookItem p {
+  text-align: center;
+  width: 15rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 1600px) {
+  .listItem {
+    margin: 0rem;
+    padding: 0rem;
+    padding-top: 0rem;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  .buttonsContainer {
+    flex-direction: column;
+  }
+  .bookItem button {
+    width: 15rem;
+  }
+}
