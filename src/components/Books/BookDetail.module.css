@@ -1,6 +1,8 @@
 .detailContainer{
     margin-top: 7rem;
     display: flex;
+    /* flex-direction: column;
+    align-items: center; */
     height:100%;
     width:100%;
     /* align-items: center; */
@@ -38,7 +40,7 @@
 }
 .descriptionButton{
     cursor: pointer;
-    width: 15%;
+    width: 10rem;
     height: 2.2rem;
     margin-top: 1rem;
     font-size: 1rem;
@@ -53,7 +55,7 @@
     border-color: black;
 }
 
-@media(max-width:1600px){
+@media(max-width:1400px){
     .detailContainer{
         display: flex;
         flex-direction: column;
@@ -72,6 +74,6 @@
         height: 20rem;
     }
     .descriptionButton{
-        width: auto;
+        width: 15rem;
     }
 }
