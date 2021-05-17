@@ -15,7 +15,7 @@ const UserProducts = (props) => {
   useEffect(()=>{
     const fetchUserBooks=async()=>{
       try{
-        const responseData=await sendRequest(`${process.env.REACT_APP_BACKEND_URL}/api/books`);
+        const responseData=await sendRequest(`${process.env.REACT_APP_BACKEND_URL}/books`);
       setUserBooks(responseData.books);
       }catch(err){
 
