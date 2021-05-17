@@ -85,23 +85,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .navigation-side-drawer li{
     list-style: none;
-    margin: 1.5rem;
+    /* margin: 1rem; */
 }
 .navigation-side-drawer a{
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding: 1rem 2rem;
+    background-color: #d3d3d3;
     border-radius: 5rem;
-    
     color: #B73225;
-    font-weight: bold;
+    cursor: pointer;
+    font-weight: bolder;
     text-decoration: none;
 }
 .navigation-side-drawer p{
     padding: 1rem 2rem;
+    background-color: #d3d3d3;
     border-radius: 5rem;
     color: #B73225;
     cursor: pointer;

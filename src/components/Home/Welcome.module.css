@@ -4,6 +4,7 @@
     height: 28rem;
     /* opacity: 0.6; */
     overflow: hidden;
+    object-fit: cover;
 }
 .header{
     position: absolute;
@@ -19,3 +20,8 @@
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
 }
+/* @media(max-width:350px){
+    .main-image img{
+        width:350px;
+    }
+} */
