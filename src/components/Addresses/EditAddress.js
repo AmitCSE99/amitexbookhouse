@@ -63,7 +63,7 @@ const EditAddress=props=>{
       return;
     }
     try{
-      const responseData=await sendRequest(`http://localhost:5000/api/auth/edit-address/${params.addressId}`,'PATCH',JSON.stringify({
+      const responseData=await sendRequest(`${process.env.REACT_APP_BACKEND_URL}/auth/edit-address/${params.addressId}`,'PATCH',JSON.stringify({
         userId:auth.userId,
         enteredAddress:enteredAddress
       }),{
