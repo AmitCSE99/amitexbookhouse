@@ -36,10 +36,9 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-@media(max-height:650px){
+@media(max-height:750px){
  .container{
-     top:35%;
-     /* left:3% */
+     top:31%;
  }
  .addAddressButton{
      margin-top: 1rem;
