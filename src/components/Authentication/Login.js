@@ -201,7 +201,7 @@ const Login = (props) => {
             <label htmlFor="email">Email</label>
             <input
               id="email"
-              type="text"
+              type="email"
               onChange={emailChangedHandler}
               value={enteredEmail}
               onBlur={emailBlurHandler}
