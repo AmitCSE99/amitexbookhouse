@@ -19,7 +19,7 @@ const CheckoutItem=props=>{
             });
             auth.cartCounter(0);
             alert("Your Order is placed Sucessfully")
-            history.push('/');
+            history.replace('/');
         }catch(err){
 
         }
