@@ -33,7 +33,7 @@ const UserProductItem=props=>{
         <li className={classes.listItem}>
         
         <div className={classes.bookItem}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/${props.imageSrc}`}></img>
+            <img src={`${process.env.REACT_APP_BACKEND_URL}/books/getImage/${props.imageSrc}`}></img>
             <p>{props.title}</p>
             <p>{`₹${props.price}`}</p>
             <div className={classes.buttonsContainer}>

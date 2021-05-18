@@ -1,6 +1,6 @@
 import classes from './Bookitem.module.css';
 import {useHistory} from 'react-router-dom';
-import {Fragment, useContext} from 'react';
+import {Fragment, useContext, useEffect, useState} from 'react';
 import AuthContext from '../../context/auth-context';
 import useHttpClient from '../../hooks/use-http';
 import LoadingSpinner from '../../UI/LoadingSpinner';
@@ -9,6 +9,7 @@ const Bookitem=props=>{
     const history=useHistory();
     const auth=useContext(AuthContext);
     const {isLoading,error,sendRequest,clearError}=useHttpClient();
+    const {image,setImage}=useState();
 
     const addToCartHandler=async()=>{
         if(!auth.isLoggedIn){
@@ -50,7 +51,7 @@ const Bookitem=props=>{
         <li className={classes.listItem}>
         
         <div className={classes.bookItem}>
-            <img src={`${process.env.REACT_APP_ASSET_URL}/${props.imageSrc}`} onClick={bookDetailHandler}></img>
+            <img src={`${process.env.REACT_APP_BACKEND_URL}/books/getImage/${props.imageSrc}`} onClick={bookDetailHandler}></img>
             <p>{props.title}</p>
             <p>{`₹${props.price}`}</p>
             <button onClick={addToCartHandler}>Add to Cart</button>
