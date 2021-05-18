@@ -30,6 +30,9 @@
     cursor: pointer;
     font-weight: bolder;
 }
+.nav li{
+    list-style: none;
+}
 .nav2 p:hover{
     background-color: #DCE1E3;
     text-decoration: underline;
@@ -49,6 +52,7 @@
     padding: 1rem 2rem;
     border-radius: 5rem;
     color: #B73225;
+    background-color: #DCE1E3;
     font-weight: bold;
     text-decoration: none;
 }
@@ -129,6 +133,9 @@
     .nav h2{
         display: none;
        
+    }
+    .login{
+        display: none;
     }
     .headerCart{
         margin-left: 1rem;

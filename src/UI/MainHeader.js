@@ -50,11 +50,11 @@ const MainHeader = () => {
               Add Products
             </NavLink>
           </li>}
-          {!auth.isLoggedIn&& <li>
+          {/* {!auth.isLoggedIn&& <li>
             <NavLink to="/login" activeClassName={classes.active}>
               Login
             </NavLink>
-          </li>}
+          </li>} */}
           
           {auth.isLoggedIn&&!auth.isAdmin&& <li>
             <NavLink to="/user" activeClassName={classes.active}>
@@ -114,6 +114,11 @@ const MainHeader = () => {
           
           
         </ul>
+        {!auth.isLoggedIn&& <li>
+            <NavLink to="/login" activeClassName={classes.active} className={classes.login}>
+              Login
+            </NavLink>
+          </li>}
         {auth.isLoggedIn&&!auth.isAdmin&&<div className={classes.headerCart}>
         <HeaderCartButton onClick={cartNavHandler}></HeaderCartButton>
         </div>}
