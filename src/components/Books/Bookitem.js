@@ -51,7 +51,8 @@ const Bookitem=props=>{
         <li className={classes.listItem}>
         
         <div className={classes.bookItem}>
-            <img src={`${process.env.REACT_APP_BACKEND_URL}/books/getImage/${props.imageSrc}`} onClick={bookDetailHandler}></img>
+            {/* <img src={`${process.env.REACT_APP_BACKEND_URL}/books/getImage/${props.imageSrc}`} onClick={bookDetailHandler}></img> */}
+            <img src={props.imageSrc} onClick={bookDetailHandler}></img>
             <p>{props.title}</p>
             <p>{`₹${props.price}`}</p>
             <button onClick={addToCartHandler}>Add to Cart</button>

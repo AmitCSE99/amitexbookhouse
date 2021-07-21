@@ -67,7 +67,7 @@ const BookDetails = (props) => {
       <div className={classes.detailContainer}>
         {!isLoading && loadedBook && (
           <div className={classes.imageContainer}>
-            <img src={`${process.env.REACT_APP_BACKEND_URL}/books/getImage/${loadedBook.image}`}></img>
+            <img src={loadedBook.image}></img>
           </div>
         )}
         {!isLoading && loadedBook && (

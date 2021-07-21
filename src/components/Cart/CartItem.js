@@ -50,7 +50,7 @@ const CartItem = (props) => {
         <li>
           <div className={classes.itemContainer}>
             <div className={classes.imageContainer}>
-              <img src={`${process.env.REACT_APP_BACKEND_URL}/books/getImage/${loadedBook.image}`}></img>
+              <img src={loadedBook.image}></img>
             </div>
             <div className={classes.detailsContainer}>
               <p className={classes.titleContainer}>{loadedBook.title}</p>
